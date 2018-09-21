@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rockymcgredy-optimizely/optimizely-snippet-test-page.git"
+    "url": "git+https://github.com/rockymcgredy-optimizely/fullstack_events_integration.git"
   },
   "keywords": [
     "\"optimizely\"",
@@ -21,9 +21,9 @@
   "author": "Rocky McGredy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rockymcgredy-optimizely/optimizely-snippet-test-page/issues"
+    "url": "https://github.com/rockymcgredy-optimizely/fullstack_events_integration/issues"
   },
-  "homepage": "https://github.com/rockymcgredy-optimizely/optimizely-snippet-test-page#readme",
+  "homepage": "https://github.com/rockymcgredy-optimizely/fullstack_events_integration#readme",
   "dependencies": {
     "@optimizely/optimizely-sdk": "^2.1.3",
     "body-parser": "^1.18.2",
