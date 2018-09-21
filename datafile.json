@@ -1,0 +1,307 @@
+{
+    "version": "4",
+    "rollouts": [{
+        "experiments": [{
+            "status": "Running",
+            "key": "11382441943",
+            "layerId": "11368801408",
+            "trafficAllocation": [{
+                "entityId": "11357732608",
+                "endOfRange": 5000
+            }],
+            "audienceIds": ["11187970675"],
+            "variations": [{
+                "variables": [{
+                    "id": "11392222743",
+                    "value": "5"
+                }, {
+                    "id": "11380511061",
+                    "value": "true"
+                }, {
+                    "id": "11372721492",
+                    "value": "Recommended for you"
+                }, {
+                    "id": "11368791276",
+                    "value": "similar_users"
+                }, {
+                    "id": "11357802410",
+                    "value": "95.0"
+                }],
+                "id": "11357732608",
+                "key": "11357732608",
+                "featureEnabled": true
+            }],
+            "forcedVariations": {},
+            "id": "11382441943"
+        }],
+        "id": "11368801408"
+    }, {
+        "experiments": [{
+            "status": "Not started",
+            "key": "11368953360",
+            "layerId": "11374794840",
+            "trafficAllocation": [{
+                "entityId": "11359234408",
+                "endOfRange": 0
+            }],
+            "audienceIds": [],
+            "variations": [{
+                "variables": [],
+                "id": "11359234408",
+                "key": "11359234408",
+                "featureEnabled": false
+            }],
+            "forcedVariations": {},
+            "id": "11368953360"
+        }],
+        "id": "11374794840"
+    }],
+    "anonymizeIP": false,
+    "projectId": "10784832357",
+    "variables": [],
+    "featureFlags": [{
+        "experimentIds": [],
+        "rolloutId": "11368801408",
+        "variables": [{
+            "defaultValue": "95.0",
+            "type": "double",
+            "id": "11357802410",
+            "key": "user_match"
+        }, {
+            "defaultValue": "similar_users",
+            "type": "string",
+            "id": "11368791276",
+            "key": "based_on"
+        }, {
+            "defaultValue": "Recommended for you",
+            "type": "string",
+            "id": "11372721492",
+            "key": "section_title"
+        }, {
+            "defaultValue": "true",
+            "type": "boolean",
+            "id": "11380511061",
+            "key": "show_share_button"
+        }, {
+            "defaultValue": "5",
+            "type": "integer",
+            "id": "11392222743",
+            "key": "num_items"
+        }],
+        "id": "11380641615",
+        "key": "clothing_recommendations"
+    }, {
+        "experimentIds": [],
+        "rolloutId": "11374794840",
+        "variables": [{
+            "defaultValue": "0.0",
+            "type": "double",
+            "id": "11359253858",
+            "key": "referral_multiplier"
+        }, {
+            "defaultValue": "false",
+            "type": "boolean",
+            "id": "11361065419",
+            "key": "show_share_buttons"
+        }, {
+            "defaultValue": "Way to go! Here's your reward!",
+            "type": "string",
+            "id": "11374684126",
+            "key": "success_message"
+        }, {
+            "defaultValue": "500",
+            "type": "integer",
+            "id": "11383201772",
+            "key": "offer_amount"
+        }, {
+            "defaultValue": "false",
+            "type": "boolean",
+            "id": "11388534193",
+            "key": "refer_a_friend"
+        }, {
+            "defaultValue": "true",
+            "type": "boolean",
+            "id": "11391370512",
+            "key": "increase_for_referrals"
+        }],
+        "id": "11384763840",
+        "key": "token_offer"
+    }],
+    "experiments": [{
+        "status": "Running",
+        "key": "messaging_test",
+        "layerId": "10962342483",
+        "trafficAllocation": [{
+            "entityId": "10953361550",
+            "endOfRange": 5000
+        }, {
+            "entityId": "10966151053",
+            "endOfRange": 10000
+        }],
+        "audienceIds": [],
+        "variations": [{
+            "variables": [],
+            "id": "10966151053",
+            "key": "a"
+        }, {
+            "variables": [],
+            "id": "10953361550",
+            "key": "b"
+        }],
+        "forcedVariations": {},
+        "id": "10932001882"
+    }, {
+        "status": "Not started",
+        "key": "token_offer_test",
+        "layerId": "11357804441",
+        "trafficAllocation": [{
+            "entityId": "11361732388",
+            "endOfRange": 3333
+        }, {
+            "entityId": "11392255182",
+            "endOfRange": 5000
+        }, {
+            "entityId": "11378673311",
+            "endOfRange": 8333
+        }, {
+            "entityId": "11392255182",
+            "endOfRange": 10000
+        }],
+        "audienceIds": ["11382533475"],
+        "variations": [{
+            "variables": [{
+                "id": "11374684126",
+                "value": "Way to go! Here's your reward!"
+            }, {
+                "id": "11391370512",
+                "value": "true"
+            }, {
+                "id": "11359253858",
+                "value": "0.0"
+            }, {
+                "id": "11388534193",
+                "value": "false"
+            }, {
+                "id": "11361065419",
+                "value": "false"
+            }, {
+                "id": "11383201772",
+                "value": "500"
+            }],
+            "id": "11361732388",
+            "key": "variation_1",
+            "featureEnabled": true
+        }, {
+            "variables": [],
+            "id": "11378673311",
+            "key": "variation_2",
+            "featureEnabled": false
+        }, {
+            "variables": [{
+                "id": "11374684126",
+                "value": "Way to go! Here's your reward!"
+            }, {
+                "id": "11391370512",
+                "value": "true"
+            }, {
+                "id": "11359253858",
+                "value": "0.5"
+            }, {
+                "id": "11388534193",
+                "value": "true"
+            }, {
+                "id": "11361065419",
+                "value": "true"
+            }, {
+                "id": "11383201772",
+                "value": "250"
+            }],
+            "id": "11392255182",
+            "key": "variation_3",
+            "featureEnabled": true
+        }],
+        "forcedVariations": {},
+        "id": "11369801990"
+    }],
+    "audiences": [{
+        "id": "11208213499",
+        "conditions": "[\"and\", [\"or\", [\"or\", {\"type\": \"custom_attribute\", \"name\": \"optimizely_user\", \"value\": \"true\"}]]]",
+        "name": "Optimizely Users"
+    }, {
+        "id": "11187970675",
+        "conditions": "[\"and\", [\"or\", [\"or\", {\"type\": \"custom_attribute\", \"name\": \"is_analyst\", \"value\": \"true\"}]]]",
+        "name": "QA Users"
+    }, {
+        "id": "11382533475",
+        "conditions": "[\"and\", [\"or\", [\"or\", {\"type\": \"custom_attribute\", \"name\": \"streamer\", \"value\": \"true\"}]]]",
+        "name": "Streamers"
+    }],
+    "groups": [],
+    "attributes": [{
+        "id": "10888750477",
+        "key": "premium_users"
+    }, {
+        "id": "10945620952",
+        "key": "subscribed"
+    }, {
+        "id": "10956300618",
+        "key": "app_version"
+    }, {
+        "id": "11079651768",
+        "key": "logged_in"
+    }, {
+        "id": "11101381238",
+        "key": "first_login"
+    }, {
+        "id": "11208180455",
+        "key": "is_analyst"
+    }, {
+        "id": "11222901339",
+        "key": "optimizely_user"
+    }, {
+        "id": "11368991968",
+        "key": "women_18_24"
+    }, {
+        "id": "11372705678",
+        "key": "gamer"
+    }, {
+        "id": "11374861801",
+        "key": "formal_style"
+    }, {
+        "id": "11377781797",
+        "key": "studio"
+    }, {
+        "id": "11378782578",
+        "key": "streetwear_style"
+    }, {
+        "id": "11388345267",
+        "key": "crypto_enthusiast"
+    }, {
+        "id": "11390494690",
+        "key": "streamer"
+    }],
+    "botFiltering": false,
+    "accountId": "6566831207",
+    "events": [{
+        "experimentIds": ["10932001882", "11369801990"],
+        "id": "10941771186",
+        "key": "completed_sign_up"
+    }, {
+        "experimentIds": [],
+        "id": "10949450170",
+        "key": "upgraded_account"
+    }, {
+        "experimentIds": [],
+        "id": "10953391290",
+        "key": "logged_in"
+    }, {
+        "experimentIds": ["10932001882"],
+        "id": "11357676231",
+        "key": "Body Click"
+    }, {
+        "experimentIds": [],
+        "id": "11370991511",
+        "key": "clicked_share_item"
+    }],
+    "revision": "74"
+}

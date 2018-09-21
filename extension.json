@@ -1,0 +1,35 @@
+{
+  "plugin_type": "analytics_integration",
+  "name": "Full Stack Events Integration",
+  "form_schema": [
+    {
+      "default_value": "8gcKf7mGKKbuEFLgCCdYSg",
+      "field_type": "text",
+      "name": "sdkKey",
+      "label": "sdkKey",
+      "options": null
+    },
+    {
+      "default_value": "true",
+      "field_type": "dropdown",
+      "name": "enableDebug",
+      "label": "Enable Debug Logging",
+      "options": {
+        "choices": [
+          {
+            "value": "true",
+            "label": "true"
+          },
+          {
+            "value": "false",
+            "label": "false"
+          }
+        ]
+      }
+    }
+  ],
+  "description": "",
+  "options": {
+    "track_layer_decision": "\"use strict\";\n\n//create Optimizely client\nvar script = document.createElement('script');\nscript.onload = function () {\n    //do stuff with the script\n    console.log(\"Optimizely Full Stack JavaScript SDK Loaded\");\n    var url = \"https://cdn.optimizely.com/datafiles/\" + extension.sdkKey + \".json\";\n        fetch(url).then(function(response){\n          return response.json();\n\t\t    }).then(function(datafile){\n          var optlyClient = optimizelyClient.createInstance({datafile: datafile});\n          if(extension.enableDebug === \"true\") {\n              optlyClient.logger.logLevelName = \"DEBUG\";\n          } else {\n              optlyClient.logger.logLevelName = \"INFO\";\n          }\n          //cookie getter\n\t\t\t\t\tfunction getCookie(c_name) {\n        \t\tif (document.cookie.length > 0) {\n          \tc_start = document.cookie.indexOf(c_name + \"=\");\n        \t\tif (c_start != -1) {\n          \t\tc_start = c_start + c_name.length + 1;\n          \t\tc_end = document.cookie.indexOf(\";\", c_start);\n            if (c_end == -1) c_end = document.cookie.length;\n            return unescape(document.cookie.substring(c_start, c_end));\n        \t\t}\n        \t\t}\n    \t\t\treturn \"\";\n\t\t\t\t\t}\t\n\n          //listen for Optimizely Events and send to Full Stack\n\t\t\t\t\tfunction onTrackEvent(event) {\n  \t\t\t\t\tvar userId = getCookie(\"FSUserId\");\n  \t\t\t\t\tconsole.log(userId);\n    \t\t\t\tconsole.log(\"The event \" + event.data.name + \" was tracked\");\n  \t\t\t\t\toptlyClient.track(event.data.name, userId);\n  \t\t\t\t\tconsole.log(event);\n\t\t\t\t\t}\n\n\t\t\t\t\twindow.optimizely.push({\n \t\t\t\t\t\ttype: \"addListener\",\n\t\t\t\t\t\t filter: {\n   \t\t\t\t\t\ttype: \"analytics\",\n   \t\t\t\t\t\tname: \"trackEvent\"\n \t\t\t\t\t\t },\n \t\t\t\t\t\t handler: onTrackEvent\n\t\t\t\t\t});\n        });\n};\nscript.src = \"https://cdn.optimizely.com/optimizely-2.1.2.min.js\";\n\ndocument.head.appendChild(script);\n"
+  }
+}
