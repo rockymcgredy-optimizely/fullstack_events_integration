@@ -1,6 +1,6 @@
 # About this project
 This project contains the following items:
-* `extension.json`: A custom analytics integration for Optimizely X web that uses front-end instance of Full Stack send an equivalent Full Stack event whenever X Web fires a track Events
+* `extension.json`: A custom analytics integration for Optimizely X web that uses front-end instance of Full Stack to send an equivalent Full Stack event whenever X Web fires a track Events
 * `app.js`: A simple node webserver, built with expressjs, that serves a test page with a Full Stack user ID cookie. This cookie is utilized by the Full Stack integration to ensure that front end events are properly attributed to full stack experiments
 
 # How to use
