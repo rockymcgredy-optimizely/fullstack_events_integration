@@ -9,3 +9,4 @@ node_modules
 integration.js
 new_integration.js
 package-lock.json
+.gitignore
