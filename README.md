@@ -14,7 +14,7 @@ This project contains the following items:
 
 ## Using the extension
 * Create a new analytics integration from JSON, using the contents of `extension.json`
-* Update the API key to a personal project full stack project in the integration settings
+* Update the API key to a personal full stack project in the integration settings
 * Create a new test targeting `localhost:3000`
 * Create events in your full stack project that match the names of your web Events
 * Run the test. There is log output in the javascript console to confirm the integation is working
