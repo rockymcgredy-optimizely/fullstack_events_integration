@@ -19,13 +19,13 @@ The provided integration allows you to easily send an event to the Optimizely Fu
 
 ## Using the extension
 * Create a new analytics integration from JSON, using the contents of `extension.json`:
-![Screenshot](https://github.com/rockymcgredy-optimizely/fullstack_events_integration/tree/master/public/images/using_json.png)
+![Screenshot](https://raw.githubusercontent.com/rockymcgredy-optimizely/fullstack_events_integration/master/public/images/using_json.png)
 * Update the API key to a personal full stack project in the integration settings
-![Screenshot](https://github.com/rockymcgredy-optimizely/fullstack_events_integration/tree/master/public/images/sdkKey.png)
+![Screenshot](https://raw.githubusercontent.com/rockymcgredy-optimizely/fullstack_events_integration/master/public/images/sdkKey.png)
 * Create a new test targeting `http://localhost:3000`
-![Screenshot](https://github.com/rockymcgredy-optimizely/fullstack_events_integration/tree/master/public/images/url_targeting.png)
+![Screenshot](https://raw.githubusercontent.com/rockymcgredy-optimizely/fullstack_events_integration/master/public/images/url_targeting.png)
 * Create events in your full stack project that match the names of your web Events
-![Screenshot](https://github.com/rockymcgredy-optimizely/fullstack_events_integration/tree/master/public/images/clicked_checkout_web.png)
-![Screenshot](https://github.com/rockymcgredy-optimizely/fullstack_events_integration/tree/master/public/images/clicked_checkout_fullstack.png)
+![Screenshot](https://raw.githubusercontent.com/rockymcgredy-optimizely/fullstack_events_integration/master/public/images/clicked_checkout_web.png)
+![Screenshot](https://raw.githubusercontent.com/rockymcgredy-optimizely/fullstack_events_integration/master/public/images/clicked_checkout_fullstack.png)
 * Run the test. There is log output in the javascript console to confirm the integration is working
-![Screenshot](https://github.com/rockymcgredy-optimizely/fullstack_events_integration/tree/master/public/images/console_log.png)
+![Screenshot](https://raw.githubusercontent.com/rockymcgredy-optimizely/fullstack_events_integration/master/public/images/console_log.png)
