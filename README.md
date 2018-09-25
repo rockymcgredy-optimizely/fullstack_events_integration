@@ -8,7 +8,7 @@ The provided integration allows you to easily send an event to the Optimizely Fu
 * `app.js`: A simple node webserver, built with expressjs, that serves a test page with a Full Stack user ID cookie. This cookie is utilized by the Full Stack integration to ensure that front end events are properly attributed to full stack experiments
 
 # How to use
-*note:* Follow the below steps in order
+*note:* Complete the "running the test site" steps before the "using the integration" steps.
 
 ## Running the test site
 * `git clone` this repo
