@@ -1,7 +1,7 @@
 # About this project
 
 ## Use Case
-The provided integration allows you to easily send an event to the Optimizely Full Stack results page. Using the Optimizely Full Stack Javascript SDK, in conjunction with an Optimizely X Web TrackEvent listener, it's possible to send a Full Stack event each time the X Web client tracks an event.
+The provided integration allows you to easily send an Optimizely X Web event to the Optimizely Full Stack results page. Using the Optimizely Full Stack Javascript SDK, in conjunction with an Optimizely X Web TrackEvent listener, it's possible to send a Full Stack event each time the X Web client tracks an event.
 
 ## Project Contents
 * `extension.json`: A custom analytics integration for Optimizely X web that uses front-end instance of Full Stack to send an equivalent Full Stack event whenever X Web tracks an event.
